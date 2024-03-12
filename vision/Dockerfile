@@ -16,7 +16,6 @@ WORKDIR /App
 COPY es-bi-jessy.json ./es-bi-jessy.json
 COPY 20230727_140005.jpg ./20230727_140005.jpg
 ENV PROJECT_ID=es-bi-370207
-ENV GOOGLE_APPLICATION_CREDENTIALS=es-bi-jessy.json
 ENV Image=20230727_140005.jpg
 ENV BucketName=csharp.gogle.cld.education
 
