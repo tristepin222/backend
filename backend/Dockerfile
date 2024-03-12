@@ -8,6 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["backend/backend.csproj", "backend/"]
+COPY env/es-bi-jessy.json ./es-bi-jessy.json
 RUN dotnet restore "backend/backend.csproj"
 COPY . .
 WORKDIR "/src/backend"
