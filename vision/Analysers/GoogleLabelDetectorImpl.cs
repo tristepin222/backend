@@ -10,7 +10,6 @@ namespace Vision.Analysers
         ImageAnnotatorClient client;
         public GoogleLabelDetectorImpl()
         {
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "es-bi-jessy.json");
             client = ImageAnnotatorClient.Create();
         }
         public async Task<string> Analyze(string remoteFullPath, int maxLabels = 10, int minConfidenceLevel = 90)
