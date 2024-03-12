@@ -8,16 +8,3 @@ namespace MyProgram
         static void Main(string[] args) { }
     }
 }
-/*
-Vision vision = new Vision();
-
-
-vision.Call();
-
-await vision.Publish(Environment.GetEnvironmentVariable("Image"));
-
-await vision.Analyze(Environment.GetEnvironmentVariable("Image"));
-
-vision.Upload("query", "query");
-
-*/
