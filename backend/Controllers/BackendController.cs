@@ -41,11 +41,11 @@ namespace Gateway.API.Controllers
             GoogleLabelDetectorImpl analyser = new GoogleLabelDetectorImpl();
 
             string img = await analyser.Analyze(imageDataParams.RemoteFullPath, imageDataParams.MaxLabels, imageDataParams.MinConfidenceLevel);
-            SQLDumber.Dumb(img);
-            return "aw";
+            //SQLDumber.Dumb(img);
+            return img;
         }
         [HttpPost]
-        public async void Upload(IFormFile formFile)
+        public async Task<string> Upload(IFormFile formFile)
         {
             string destinationDirectory = "tmp/";
             Directory.CreateDirectory(destinationDirectory);
@@ -58,8 +58,10 @@ namespace Gateway.API.Controllers
                 await formFile.CopyToAsync(stream);
             }
 
+            string bucketFilePath = "RIA2/" + filePath;
 
-            await googleDataObjectImpl.Upload(filePath, "RIA2/" + filePath);
+            await googleDataObjectImpl.Upload(filePath, bucketFilePath);
+            return bucketFilePath;
         }
     }
 }
