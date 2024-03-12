@@ -24,7 +24,8 @@
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
       "environmentVariables": {
         "ASPNETCORE_URLS": "https://+:443;http://+:80",
-        "GOOGLE_APPLICATION_CREDENTIALS": "env/es-bi-jessy.json"
+        "GOOGLE_APPLICATION_CREDENTIALS": "env/es-bi-jessy.json",
+        "BucketName": "csharp.gogle.cld.education"
       },
       "publishAllPorts": true,
       "useSSL": true
