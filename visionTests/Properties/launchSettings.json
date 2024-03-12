@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "visionTests": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "BucketName": "csharp.gogle.cld.education",
+        "DataBaseConnection": "Server=localhost;User=root;Database=vision;Port=3307;Password=root;",
+        "Image": "bi_mug.jpg",
+        "PROJECT_ID": "es-bi-370207"
+      }
+    }
+  }
+}

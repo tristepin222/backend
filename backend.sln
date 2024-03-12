@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend", "backend\backend.csproj", "{621C0023-5EE8-4C51-84B3-47D0D9E61DD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "visionTests", "visionTests\visionTests.csproj", "{B54F711E-F85F-4807-ADFD-F35BECE1F0E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vision", "vision\vision.csproj", "{2E2425F6-717E-44CA-8105-4D33D32ECF86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{621C0023-5EE8-4C51-84B3-47D0D9E61DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621C0023-5EE8-4C51-84B3-47D0D9E61DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621C0023-5EE8-4C51-84B3-47D0D9E61DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621C0023-5EE8-4C51-84B3-47D0D9E61DD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54F711E-F85F-4807-ADFD-F35BECE1F0E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54F711E-F85F-4807-ADFD-F35BECE1F0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54F711E-F85F-4807-ADFD-F35BECE1F0E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54F711E-F85F-4807-ADFD-F35BECE1F0E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E2425F6-717E-44CA-8105-4D33D32ECF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E2425F6-717E-44CA-8105-4D33D32ECF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E2425F6-717E-44CA-8105-4D33D32ECF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E2425F6-717E-44CA-8105-4D33D32ECF86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67C9D43E-80E7-4F74-9219-9130E153D724}
+	EndGlobalSection
+EndGlobal
