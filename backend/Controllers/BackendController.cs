@@ -45,9 +45,21 @@ namespace Gateway.API.Controllers
             return "aw";
         }
         [HttpPost]
-        public async void Upload([FromBody] ImageDataParams imageDataParams)
+        public async void Upload(IFormFile formFile)
         {
-            await googleDataObjectImpl.Upload(imageDataParams.LocalFullPath, imageDataParams.RemoteFullPath);
+            string destinationDirectory = "tmp/";
+            Directory.CreateDirectory(destinationDirectory);
+
+            string fileName = Path.GetFileName(formFile.FileName);
+            string filePath = Path.Combine(destinationDirectory, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await formFile.CopyToAsync(stream);
+            }
+
+
+            await googleDataObjectImpl.Upload(filePath, "RIA2/" + filePath);
         }
     }
 }
