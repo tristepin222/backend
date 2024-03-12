@@ -9,7 +9,7 @@ namespace Vision.Datas
 {
     public class GoogleDataObjectImpl : IDataObject
     {
-        private static string bucketName = "csharp.gogle.cld.education";
+        private static string bucketName = Environment.GetEnvironmentVariable("BucketName");
 
         public async Task<bool> DoesExists(string remoteFullPath)
         {
