@@ -1,9 +1,9 @@
 namespace Vision.Exceptions
 {
 
-    public class GoogleDataObjectImplException : Exception { }
+    public class DataObjectImplException : Exception { }
 
-    public class ObjectAlreadyExistsException : GoogleDataObjectImplException { }
-    public class ObjectNotFoundException : GoogleDataObjectImplException { }
-    public class NotEmptyObjectException : GoogleDataObjectImplException { }
+    public class ObjectAlreadyExistsException : DataObjectImplException { }
+    public class ObjectNotFoundException : DataObjectImplException { }
+    public class NotEmptyObjectException : DataObjectImplException { }
 }
