@@ -2,6 +2,7 @@
 using Vision.Exceptions;
 using IDataObject = Vision.Interfaces.IDataObject;
 using System.Net;
+
 namespace TestRiaApiEvaluationModel
 {
     /// <summary>
