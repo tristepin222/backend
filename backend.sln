@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend", "backend\backend.csproj", "{621C0023-5EE8-4C51-84B3-47D0D9E61DD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gateway", "gateway\gateway.csproj", "{621C0023-5EE8-4C51-84B3-47D0D9E61DD1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "visionTests", "visionTests\visionTests.csproj", "{B54F711E-F85F-4807-ADFD-F35BECE1F0E8}"
 EndProject
