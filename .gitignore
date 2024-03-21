@@ -398,3 +398,4 @@ FodyWeavers.xsd
 *.sln.iml
 /backend/env
 /vision/env
+/gateway/env
