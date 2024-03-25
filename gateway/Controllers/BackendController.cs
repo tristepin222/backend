@@ -58,7 +58,7 @@ namespace Gateway.API.Controllers
                 await formFile.CopyToAsync(stream);
             }
 
-            string bucketFilePath = "RIA2/" + filePath;
+            string bucketFilePath = filePath;
 
             await googleDataObjectImpl.Upload(filePath, bucketFilePath);
             return bucketFilePath;
