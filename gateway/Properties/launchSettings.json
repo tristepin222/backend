@@ -28,7 +28,9 @@
         "BucketName": "csharp.gogle.cld.education"
       },
       "publishAllPorts": true,
-      "useSSL": true
+      "useSSL": true,
+      "httpPort": 50000,
+      "sslPort": 50001
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
