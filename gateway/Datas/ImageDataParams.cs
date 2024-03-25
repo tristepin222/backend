@@ -2,6 +2,7 @@
 {
     public class ImageDataParams
     {
+        public IFormFile FormFile { get; set; }
         public string RemoteFullPath { get; set; }
         public string LocalFullPath { get; set; }
         public int MaxLabels { get; set; }

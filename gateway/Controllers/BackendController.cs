@@ -13,7 +13,8 @@ namespace Gateway.API.Controllers
     {
         private HttpClient httpClient;
         private GoogleDataObjectImpl googleDataObjectImpl = new GoogleDataObjectImpl();
-        [HttpPost]
+
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async void Call()
         {
             httpClient = new HttpClient();
@@ -27,7 +28,7 @@ namespace Gateway.API.Controllers
                 taskUpload.Wait();
             }
         }
-        [HttpPost]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<string> Publish([FromBody] ImageDataParams imageDataParams)
         {
             return await googleDataObjectImpl.Publish(imageDataParams.RemoteFullPath, imageDataParams.ExpirationTime);
@@ -39,12 +40,13 @@ namespace Gateway.API.Controllers
             imageDataParams.MinConfidenceLevel = 90;
 
             GoogleLabelDetectorImpl analyser = new GoogleLabelDetectorImpl();
-
+            await Upload(imageDataParams.FormFile);
             string img = await analyser.Analyze(imageDataParams.RemoteFullPath, imageDataParams.MaxLabels, imageDataParams.MinConfidenceLevel);
+            await Publish(imageDataParams);
             //SQLDumber.Dumb(img);
             return img;
         }
-        [HttpPost]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public async Task<string> Upload(IFormFile formFile)
         {
             string destinationDirectory = "tmp/";
