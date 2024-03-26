@@ -63,9 +63,7 @@ to switch broken, just run `cd ./backend|vision|visionTests`
 
 ### Building
 
-We use docker to build images, simply, over visual studio community, build the backend with visual studio community, do not try to run commands like `docker build` or `docker run`.
-
-It will simply not work, even if copying directly the commands that visual studio community runs, the backend will not be accessible.
+We use docker to build images, simply, over visual studio community, build the backend with visual studio community, or run this command  `docker-compose up --build`.
 
 ## Directory tree
     VisionTest
