@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "visionTests", "visionTests\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "vision", "vision\vision.csproj", "{2E2425F6-717E-44CA-8105-4D33D32ECF86}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FACF54AB-697E-477F-A880-3EC1BD5790D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2E2425F6-717E-44CA-8105-4D33D32ECF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E2425F6-717E-44CA-8105-4D33D32ECF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E2425F6-717E-44CA-8105-4D33D32ECF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACF54AB-697E-477F-A880-3EC1BD5790D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACF54AB-697E-477F-A880-3EC1BD5790D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACF54AB-697E-477F-A880-3EC1BD5790D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACF54AB-697E-477F-A880-3EC1BD5790D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
