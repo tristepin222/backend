@@ -35,8 +35,14 @@ namespace Gateway.API.Controllers
         [HttpPost]
         public async Task<string> Analyze([FromBody] ImageDataParams imageDataParams)
         {
-            imageDataParams.MaxLabels = 10;
-            imageDataParams.MinConfidenceLevel = 90;
+            if (imageDataParams.MaxLabels == 0)
+            {
+                imageDataParams.MaxLabels = 10;
+            }
+            if (imageDataParams.MinConfidenceLevel == 0)
+            {
+                imageDataParams.MinConfidenceLevel = 90;
+            }
 
             GoogleLabelDetectorImpl analyser = new GoogleLabelDetectorImpl();
 
