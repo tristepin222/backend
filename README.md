@@ -65,6 +65,10 @@ to switch broken, just run `cd ./backend|vision|visionTests`
 
 We use docker to build images, simply, over visual studio community, build the backend with visual studio community, or run this command  `docker-compose up --build`.
 
+#### Certs error
+
+if you happen to run into issues with certificates, run these commands : `dotnet dev-certs https --clean` and `dotnet dev-certs https --trust`, then restart visual studio commmunity.
+
 ## Directory tree
     VisionTest
     ├───Analysers
